@@ -1,0 +1,14 @@
+.header {
+    background-color: aquamarine;
+    color: black;
+    min-height: 350px;
+    padding: 180px 20px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 5px;
+}
