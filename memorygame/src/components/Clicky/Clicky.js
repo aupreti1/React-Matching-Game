@@ -34,7 +34,7 @@ class Clicky extends Component {
     };
 
     resetItem = item => {
-        const resetItem = item.map(image => ({ ...image, clicked: false}));
+        const resetItem = item.map(character => ({ ...character, clicked: false}));
         return this.shuffleItem(resetItem);
     };
 
@@ -53,20 +53,41 @@ class Clicky extends Component {
 
     handleImageClick = id => {
         let correctGuess = false;
-        const newItem = this.state.item.map(image => {
-            const newImage = { ...image };
-            if (newImage.Id === id) {
-                if (!newImage.clicked) {
-                    newImage.clicked = true;
+        const newItem = this.state.item.map(character => {
+            const newImage = { ...character };
+            if (newCharacter.Id === id) {
+                if (!newCharacter.clicked) {
+                    newCharacter.clicked = true;
                     correctGuess = true;
                 }
             }
-            return newImage;
+            return newCharacter;
         });
         correctGuess
             ? this.handleCorrectClick(newItem)
             : this.handleIncorrectClick(newItem);
     };
 
-
+    render() {
+        return (
+            <div>
+                <Nav score={this.state.score} topScore={this.state.topScore} />
+                <Header />
+                <Container>
+                    {this.state.item.map(character => (
+                        <Item
+                        key={character.id}
+                        id={character.id}
+                        shake={!this.state.score && this.state.topScore}
+                        handleClick={this.handleCharacterClick}
+                        image={character.image}
+                        />
+                    ))}
+                </Container>
+                <Footer />
+            </div>
+        );
+    }
 }
+
+export default Clicky;

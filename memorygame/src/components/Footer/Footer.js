@@ -1,10 +1,12 @@
 import React from "react";
-import "./style.css";
+import "./Footer.css";
 
-function Footer() {
-    return (
-        <footer className="Footer">
-            <span></span>
-        </footer>
-    )
-}
+const Footer = () => (
+    <footer className="footer">
+        <div className="bottom">
+            Memory Game!
+        </div>
+    </footer>
+);
+
+export default Footer;
