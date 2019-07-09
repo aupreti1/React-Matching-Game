@@ -32,4 +32,22 @@ class Clicky extends Component {
             score: 0
         });
     };
+
+    resetItem = item => {
+        const resetItem = item.map(picture => ({ ...picture, clicked: false}));
+        return this.shuffleItem(resetItem);
+    };
+
+    shuffleItem = item => {
+        let i = item.length - 1;
+        if (i > 0) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = item[i];
+            item[i] = item[j];
+            item[j] = temp;
+            i--;
+        }
+
+        return item;
+    }
 }
