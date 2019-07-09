@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/archer.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/carol.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/elevator.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/figgus.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/island.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/lana.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/lanasterling.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/malory.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "/assets/images/pam.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "/assets/images/plane.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "image": "/assets/images/ray.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "image": "/assets/images/sterling.jpg",
+        "clicked": false
+    }
+]
