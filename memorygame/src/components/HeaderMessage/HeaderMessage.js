@@ -1,7 +1,7 @@
 import React, {Component } from "react";
-import "./NavMessage.css";
+import "./HeaderMessage.css";
 
-class NavMessage extends Component {
+class HeaderMessage extends Component {
     state ={
         message: "",
         animating: false
@@ -30,7 +30,7 @@ class NavMessage extends Component {
             case "incorrect":
                 return "Incorrect Guess!";
             default:
-                return "Click an Image to Begin!"
+                return "Let's Begin!"
         }
     };
 
@@ -43,4 +43,4 @@ class NavMessage extends Component {
     }
 }
 
-export default NavMessage;
+export default HeaderMessage;

@@ -3,7 +3,6 @@ import Container from "../Container/Container";
 import ClickItem from "../ClickItem/ClickItem";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Navbar from "../Navbar/Navbar";
 import item from "../../item.json";
 
 
@@ -52,13 +51,14 @@ class Clicky extends Component {
         }
 
         return item;
+
     };
 
     handleCharacterClick = id => {
         let correctGuess = false;
         const newItem = this.state.item.map(character => {
             const newCharacter = { ...character };
-            if (newCharacter.Id === id) {
+            if (newCharacter.id === id) {
                 if (!newCharacter.clicked) {
                     newCharacter.clicked = true;
                     correctGuess = true;
@@ -71,11 +71,11 @@ class Clicky extends Component {
             : this.handleIncorrectClick(newItem);
     };
 
+
     render() {
         return (
             <div>
-                <Navbar score={this.state.score} topScore={this.state.topScore} />
-                <Header />
+                <Header score={this.state.score} topScore={this.state.topScore}/>
                 <Container>
                     {this.state.item.map(character => (
                         <ClickItem

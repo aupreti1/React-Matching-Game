@@ -1,8 +1,10 @@
 import React from "react";
 import Clicky from "./components/Clicky/Clicky";
 
+
+
 const App = () => {
-    return (
+    return(
         <div>
             <Clicky />
         </div>

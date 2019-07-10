@@ -1,9 +1,8 @@
     
 .header {
-    background-color: #2C323C;
-    background-image: url("/assets/images/background.jpg");
+    background-color: blue;
+    background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQweNqxUyJkFo1zvWaRtjijVTuyEdFHqspFt4hM1Go2_NBYtQ4z8Q";
     background-repeat: repeat;
-    color: white;
     min-height: 400px;
     padding: 180px 20px; 
     padding-bottom: 140px;
@@ -14,4 +13,13 @@
     margin: 0;
     margin-bottom: 30px;
     font-size: 4rem;
+    font-family: 'Notable', sans-serif;
+  }
+
+  .header h2 {
+    font-family: 'Merienda', cursive;
+  }
+
+  .header h3 {
+    font-family: 'Merienda', cursive;
   }
