@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Container from "../Container/Container";
-import Footer from "../Footer/";
+import ClickItem from "../ClickItem/ClickItem";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Item from "../Item/Item";
+import Navbar from "../Navbar/Navbar";
+import item from "../../item.json";
+
 
 class Clicky extends Component {
     state = {
@@ -12,7 +15,7 @@ class Clicky extends Component {
     };
 
     componentDidMount() {
-        this.setState({ item: this.shuffleItem(this.forceUpdate.item) });
+        this.setState({ item: this.shuffleItem(this.state.item) });
     }
 
     handleCorrectClick = newItem => {
@@ -40,7 +43,7 @@ class Clicky extends Component {
 
     shuffleItem = item => {
         let i = item.length - 1;
-        if (i > 0) {
+        while (i > 0) {
             const j = Math.floor(Math.random() * (i + 1));
             const temp = item[i];
             item[i] = item[j];
@@ -51,10 +54,10 @@ class Clicky extends Component {
         return item;
     };
 
-    handleImageClick = id => {
+    handleCharacterClick = id => {
         let correctGuess = false;
         const newItem = this.state.item.map(character => {
-            const newImage = { ...character };
+            const newCharacter = { ...character };
             if (newCharacter.Id === id) {
                 if (!newCharacter.clicked) {
                     newCharacter.clicked = true;
@@ -71,11 +74,11 @@ class Clicky extends Component {
     render() {
         return (
             <div>
-                <Nav score={this.state.score} topScore={this.state.topScore} />
+                <Navbar score={this.state.score} topScore={this.state.topScore} />
                 <Header />
                 <Container>
                     {this.state.item.map(character => (
-                        <Item
+                        <ClickItem
                         key={character.id}
                         id={character.id}
                         shake={!this.state.score && this.state.topScore}

@@ -1,8 +1,12 @@
 import React from "react";
-import Clicky from "./components/Clicky";
+import Clicky from "./components/Clicky/Clicky";
 
 const App = () => {
-    <Clicky />
+    return (
+        <div>
+            <Clicky />
+        </div>
+    )
 };
 
 export default App;
