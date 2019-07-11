@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => (
     <footer className="footer">
         <div className="bottom">
-            Memory Game!
+            <a href="https://github.com/aupreti1">My GitHub</a>
         </div>
     </footer>
 );
