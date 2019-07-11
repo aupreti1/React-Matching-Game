@@ -9,14 +9,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/aupreti1/React-Matching-Game",
   "eslintConfig": {
     "extends": "react-app"
   },
