@@ -1,8 +1,8 @@
     
 .header {
-    background-color: blue;
-    background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQweNqxUyJkFo1zvWaRtjijVTuyEdFHqspFt4hM1Go2_NBYtQ4z8Q";
-    background-repeat: repeat;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN64pD-KzU3_pR10h5oFOrrRFl1Xr80a2OGNuS7Ig2SI2JbIcq");
+    background-repeat: no-repeat;
+    background-size: 100%;
     min-height: 400px;
     padding: 180px 20px; 
     padding-bottom: 140px;
@@ -14,12 +14,15 @@
     margin-bottom: 30px;
     font-size: 4rem;
     font-family: 'Notable', sans-serif;
+    color: #a60066;
   }
 
   .header h2 {
     font-family: 'Merienda', cursive;
+    color: #00b2ad;
   }
 
   .header h3 {
     font-family: 'Merienda', cursive;
+    color: #00b2ad;
   }
